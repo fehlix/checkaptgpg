@@ -1,3 +1,21 @@
+checkaptgpg (17.09mcr120+2) mepis; urgency=medium
+
+  * Repackaged for Mepis 12 / MX-14 
+
+ -- Kent Mathern <maintainer@mepiscommunity.org>  Fri, 01 Sep 2017 12:52:54 -0400
+
+checkaptgpg (17.09mx15+2) mx; urgency=medium
+
+  * Repackaged for MX-15 / MX-16
+
+ -- Kent Mathern <maintainer@mepiscommunity.org>  Fri, 01 Sep 2017 12:51:31 -0400
+
+checkaptgpg (17.09mx17+2) mx; urgency=medium
+
+  * fix to prevent apt-key 'output should not be parsed' warning 
+
+ -- Kent Mathern <maintainer@mepiscommunity.org>  Fri, 01 Sep 2017 12:47:11 -0400
+
 checkaptgpg (17.09mcr120+1) mepis; urgency=medium
 
   * Repackaged for Mepis 12 / MX-14  

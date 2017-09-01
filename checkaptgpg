@@ -120,14 +120,26 @@ do
           #hkp://keyservers.org
           #hkp://keyserver.linux.it"
           # try to download a key from keyserver(s) until it succeeds, or the end of the list has been reached
-          for KEYSERVER in $(sed 's/ /\n/g' <<<$KEYSERVER_LIST | grep -v ^#)
-          do
-            apt-key adv --keyserver $KEYSERVER --recv-key $GPGKEY 1>/dev/null
-            if [ $? -eq 0 ]; then
-              break
-            fi
-            echo
-          done
+          if [ "$APT_VERSION" \< "1.3" ]
+            then
+              for KEYSERVER in $(sed 's/ /\n/g' <<<$KEYSERVER_LIST | grep -v ^#)
+              do
+                apt-key adv --keyserver $KEYSERVER --recv-key $GPGKEY 1>/dev/null
+                if [ $? -eq 0 ]; then
+                  break
+                fi
+                echo
+              done
+            else
+              for KEYSERVER in $(sed 's/ /\n/g' <<<$KEYSERVER_LIST | grep -v ^#)
+              do
+                apt-key adv --keyserver $KEYSERVER --recv-key $GPGKEY
+                if [ $? -eq 0 ]; then
+                  break
+                fi
+                echo
+              done
+          fi
           if [ "$APT_VERSION" \< "1.3" ]
             then
               for i in $GPGKEY; do apt-key list \
