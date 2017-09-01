@@ -1,5 +1,7 @@
 #!/bin/bash
 
+APT_VERSION="$(apt-get --version | head -n1 | cut -f2 -d\ )"
+
 check_exceptions(){
 #The Ubuntu keyserver now has gpg keys for most of these, but will leave this function in the script for the time being.
 
@@ -102,7 +104,12 @@ do
       ANSWER=$(gpgv --ignore-time-conflict $(find /etc/apt/trusted.gpg* -regex .*gpg$ | sed 's/^/ --keyring /') $GPG $RELEASE 2>&1)
       if [ $? -ne 0 ]
         then
-          GPGKEY=$(grep -Eo \ [0-9A-F]{8} <<<$ANSWER)
+          if [ "$APT_VERSION" \< "1.3" ]
+            then
+              GPGKEY=$(grep -Eo \ [0-9A-F]{8} <<<$ANSWER)
+            else
+              GPGKEY=$(grep -Eo \ [0-9A-F]{16} <<<$ANSWER)
+          fi
           KEYSERVER_LIST="\
           keyserver.ubuntu.com
           hkp://pgp.mit.edu
@@ -121,7 +128,18 @@ do
             fi
             echo
           done
-          for i in $GPGKEY; do apt-key list | grep -q $i 2>/dev/null || { echo -e \\n$i" key not found on keyservers"\\n ; check_exceptions $repo ; } ; done
+          if [ "$APT_VERSION" \< "1.3" ]
+            then
+              for i in $GPGKEY; do apt-key list \
+              | grep -q $i 2>/dev/null || \
+              { echo -e \\n$i" key not found on keyservers"\\n ;\
+              check_exceptions $repo ; } ; done
+            else
+              for i in $GPGKEY; do apt-key list 2>/dev/null \
+              | grep -q "$(echo $i | grep -Eo [0-9A-F]{4} | sed ':a;N;$!ba;s/\n/ /g')" 2>/dev/null || \
+              { echo -e \\n$i" key not found on keyservers"\\n ;\
+              check_exceptions $repo ; } ; done
+          fi
         else
           printf "$GREEN%s$END" "    Good GPG signature found."
           echo
