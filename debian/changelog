@@ -1,3 +1,21 @@
+checkaptgpg (17.12.12mcr120+1) mepis; urgency=medium
+
+  * Repackaged for Mepis 12 / MX-14
+
+ -- Kent Mathern <maintainer@mepiscommunity.org>  Tue, 12 Dec 2017 10:27:04 -0500
+
+checkaptgpg (17.12.12mx15+1) mx; urgency=medium
+
+  * Repackaged for MX-15 / MX-16
+
+ -- Kent Mathern <maintainer@mepiscommunity.org>  Tue, 12 Dec 2017 10:23:44 -0500
+
+checkaptgpg (17.12.12mx17+1) mx; urgency=medium
+
+  * Add french help
+
+ -- Kent Mathern <maintainer@mepiscommunity.org>  Tue, 12 Dec 2017 10:20:20 -0500
+
 checkaptgpg (17.09mcr120+2) mepis; urgency=medium
 
   * Repackaged for Mepis 12 / MX-14 
