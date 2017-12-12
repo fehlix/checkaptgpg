@@ -170,15 +170,22 @@ if [ "$WAITATEND" = "1" ]; then
     HelpOrQuit=""
     read -sn 1 -t 999999999 -p "Press 'H' for online help, press any other key to close this window." HelpOrQuit
     sleep .1
+    
+    case $(cut -f1 -d_ <<<$LANG) in
+      fr) HelpUrl="https://mxlinux.org/wiki/help-files/help-contr%C3%B4le-de-apt-gpg" ;;
+       *) HelpUrl="https://mxlinux.org/wiki/help-files/help-mx-check-apt-gpg" ;;
+    esac
+    
+    
     if [ "$HelpOrQuit" = "h" ] || [ "$HelpOrQuit" = "H" ]
       then
         echo
         echo
-        echo "Please wait while the link 'https://mxlinux.org/wiki/help-files/help-mx-check-apt-gpg' opens ..."
+        echo "Please wait while the link '"$HelpUrl"' opens ..."
         echo
         if [ -e /usr/bin/mx-viewer ]; then helpViewer="mx-viewer"; else helpViewer="xdg-open"; fi
         User=$(who | grep '(:0)' -m1 | awk '{print $1}')
-        1>&2 2>/dev/null su - $User -c 'env XAUTHORITY=/$HOME/.Xauthority DISPLAY=:0 1>&2 2>/dev/null '$helpViewer' https://mxlinux.org/wiki/help-files/help-mx-check-apt-gpg&'
+        1>&2 2>/dev/null su - $User -c 'env XAUTHORITY=/$HOME/.Xauthority DISPLAY=:0 1>&2 2>/dev/null '$helpViewer' '$HelpUrl'&'
         sleep 2
         read -sn 1 -p "Press any key to close this window." -t 999999999
         sleep .1
