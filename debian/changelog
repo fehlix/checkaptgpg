@@ -1,3 +1,10 @@
+checkaptgpg (18.02.28mx17+1) mx; urgency=medium
+
+  * Changed .desktop lines name to 'Fix GPG keys'
+  * renamed existing checkaptgpg.desktop to mx-checkaptgpg-kde.desktop 
+
+ -- Kent Mathern <maintainer@mepiscommunity.org>  Wed, 28 Feb 2018 13:34:03 -0500
+
 checkaptgpg (17.12.12mcr120+1) mepis; urgency=medium
 
   * Repackaged for Mepis 12 / MX-14

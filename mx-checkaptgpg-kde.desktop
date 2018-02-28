@@ -1,5 +1,5 @@
 [Desktop Entry]
-Name=Check Apt GPG
+Name=MX Fix GPG keys
 Comment=Check and install missing apt GPG keys
 Comment[en_US]=Check and install missing apt GPG keys
 Comment[fr]=Vérifier les clés GPG pour APT/ Synaptic
