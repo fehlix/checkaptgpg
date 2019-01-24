@@ -1,3 +1,9 @@
+checkaptgpg (19.01.23mx17+1) mx; urgency=medium
+
+  * Translations updated.
+
+ -- Kent Mathern <maintainer@mepiscommunity.org>  Wed, 23 Jan 2019 19:20:37 -0500
+
 checkaptgpg (18.02.28mx17+1) mx; urgency=medium
 
   * Changed .desktop lines name to 'Fix GPG keys'
