@@ -1,3 +1,9 @@
+checkaptgpg (19.04.05mx17+1) mx; urgency=medium
+
+  * April translations update.
+
+ -- Kent Mathern <maintainer@mepiscommunity.org>  Fri, 05 Apr 2019 14:52:06 -0400
+
 checkaptgpg (19.01.23mx17+1) mx; urgency=medium
 
   * Translations updated.
