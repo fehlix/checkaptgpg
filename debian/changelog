@@ -1,3 +1,9 @@
+checkaptgpg (19.07.21mx19+1) mx; urgency=medium
+
+  * Icon change for MX-19.
+
+ -- Kent Mathern <maintainer@mepiscommunity.org>  Sun, 21 Jul 2019 09:29:20 -0400
+
 checkaptgpg (19.04.05mx17+1) mx; urgency=medium
 
   * April translations update.
