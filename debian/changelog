@@ -1,6 +1,6 @@
-checkaptgpg (20.10.01mx19+1) mx; urgency=medium
+checkaptgpg (20.10.01) mx; urgency=medium
 
-  * rewrite 
+  * rewrite: fix filename issues and avoid bogus mass signature issues 
 
  -- fehlix <fehlix@mxlinux.org>  Thu, 01 Oct 2020 14:08:40 -0400
 
