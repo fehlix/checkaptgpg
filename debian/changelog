@@ -1,3 +1,9 @@
+checkaptgpg (20.10.01) mx; urgency=medium
+
+  * rewrite: fix filename issues and avoid bogus mass signature issues 
+
+ -- fehlix <fehlix@mxlinux.org>  Thu, 01 Oct 2020 14:08:40 -0400
+
 checkaptgpg (19.10.08mx19+1) mx; urgency=medium
 
   * August and September translation updates.
