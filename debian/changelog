@@ -1,3 +1,9 @@
+checkaptgpg (20.10.12) mx; urgency=medium
+
+  * added expired key handling
+
+ -- fehlix <fehlix@mxlinux.org>  Mon, 12 Oct 2020 17:32:25 -0400
+
 checkaptgpg (20.10.01) mx; urgency=medium
 
   * rewrite: fix filename issues and avoid bogus mass signature issues 
