@@ -1,6 +1,6 @@
 checkaptgpg (20.10.12) mx; urgency=medium
 
-  * added expired key handling
+  * adjust expired key handling, adjust keyserver list
 
  -- fehlix <fehlix@mxlinux.org>  Mon, 12 Oct 2020 17:32:25 -0400
 
