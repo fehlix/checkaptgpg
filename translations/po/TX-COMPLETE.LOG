@@ -1,6 +1,6 @@
 # Transifex resource mx-checkaptgpg 
 # with minimum completion percent 5%
-# generated at Mon, 12 Jun 2023 09:57:53 -0500
+# generated at Sun, 02 Jul 2023 14:03:02 -0500
    Nr.		Cnt.	 Compl.		Code		Language
    ---		----	 ------		----		--------
      1		  11	   100%    	ca      	ca	Catalan; Valencian
@@ -17,9 +17,9 @@
     12		  11	   100%    	nl      	nl	Dutch; Flemish
     13		  11	   100%    	pt      	pt	Portuguese
     14		  11	   100%    	pt_BR   	pt	Portuguese @ Brazil
-    15		  11	   100%    	sq      	sq	Albanian
-    16		  11	   100%    	sv      	sv	Swedish
-    17		  11	   100%    	tr      	tr	Turkish
-    18		   3	    27%    	pl      	pl	Polish
-    19		   2	    18%    	da      	da	Danish
-    20		   2	    18%    	sl      	sl	Slovenian
+    15		  11	   100%    	sl      	sl	Slovenian
+    16		  11	   100%    	sq      	sq	Albanian
+    17		  11	   100%    	sv      	sv	Swedish
+    18		  11	   100%    	tr      	tr	Turkish
+    19		   3	    27%    	pl      	pl	Polish
+    20		   2	    18%    	da      	da	Danish
