@@ -1,0 +1,55 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Format: 1.8
+Date: Sun, 24 Mar 2024 12:02:28 -0400
+Source: checkaptgpg
+Binary: checkaptgpg
+Architecture: source all
+Version: 24.03.01
+Distribution: mx
+Urgency: medium
+Maintainer: fehlix <fehlix@mxlinux.org>
+Changed-By: fehlix <fehlix@mxlinux.org>
+Description:
+ checkaptgpg - check and add missing GPG keys needed by apt
+Changes:
+ checkaptgpg (24.03.01) mx; urgency=medium
+ .
+   * translations refresh
+Checksums-Sha1:
+ 5d4062df67fd7882122838abf73ef4075283215d 1601 checkaptgpg_24.03.01.dsc
+ 1e6c8434b91f08b28244fb0b2be9bcff5d463507 26588 checkaptgpg_24.03.01.tar.xz
+ de3c7465e884ac3a9f13dfd81acd454bb501ece2 20316 checkaptgpg_24.03.01_all.deb
+ 239f4287e332a24b282bcc51be9d1125453aac5e 6775 checkaptgpg_24.03.01_amd64.buildinfo
+Checksums-Sha256:
+ f663757b30e687ef74b359d394df5c5d301a87ee66a8a01b99f67b7d5bab5f23 1601 checkaptgpg_24.03.01.dsc
+ f748a96a94e85c931c041f9dc0adcdca3ca86758241e99b3c39feae377f27ec8 26588 checkaptgpg_24.03.01.tar.xz
+ 89918002a8429b9ea4709c1621e672ebc4afa8f4b8ab74ec076f95d4c37d2da7 20316 checkaptgpg_24.03.01_all.deb
+ 248694f1f4331a262df7282f194e3d4e81365df158ecfdc202bf79cb42ea9ecb 6775 checkaptgpg_24.03.01_amd64.buildinfo
+Files:
+ 8d6b18f1d01ac7209477a7d5170db73c 1601 admin optional checkaptgpg_24.03.01.dsc
+ d5d19ed98d4e74555583cc1377164ba3 26588 admin optional checkaptgpg_24.03.01.tar.xz
+ fb3716d8e8d68907b3a370bb54d8125d 20316 admin optional checkaptgpg_24.03.01_all.deb
+ a14c425e1489d2aac4107f4f7cdbf809 6775 admin optional checkaptgpg_24.03.01_amd64.buildinfo
+Original-Maintainer:
+ Steven Pusser <stevep@mxlinux.org>,
+ James Carr <maintainer@mepiscommunity.org>
+
+-----BEGIN PGP SIGNATURE-----
+
+iQJHBAEBCgAxFiEEgRnC8/wKXRM2S0xLL1ePG6ydm+kFAmYAUKgTHGZlaGxpeEBt
+eGxpbnV4Lm9yZwAKCRAvV48brJ2b6cjPD/0SYlazhTrlUMCYVO29ofUNXQsHuHFl
+zEMMG+Yzv7A2e4KhvsO4niFX9FPtxygMwXq0j28s/O4muAYZr5Hm9pAP9joKvg43
+jQsan1/DfX+65TjY/CG5m4zQBS19D5eXmB+4nirRUknyocKWIIECShB7XtI228M/
+7V7JsKXbfmcfR6JTw3XyVYcW8tjMFjS9V9XctYZrd6LkCbNRKqhq99oV8XUvCTlU
+FgWw5wqXH+YablZs1vAnrCx7SVYtxmiuMiCZ/RoIg3hyqYmvFz1fEWV6h27Vk7jE
+J+kE69kdEKmp57qRegmDJw5cLNvlNKNrOIuopHjsnZcTzzSLLY1cZtAikKhs0P2V
+lCtSUwameBJFzXoP6PLeO/f1Tk8go4c5BydN1oPr4bH62Kcqi1wT0gRZC+MfMWjT
+HAnb9vuuzzK6UITFEAkNxWy+lHQkSXSXAZN7HlHB4XWS4M0G6VWPrQTaVl2Kzr0U
+EjWTJkBLR88/U5pL3GW5oV1sVCv/re4ZiF7se9mkLcmT2Gjsqr53e2EbbzAQCBuX
+lGC+7CAahccTr93iWcAi/TgoJQih7nSWu6DbOM1wWJXmdB/aIDbBdBNQKnDIG+ys
+JGGoVMExsY76GFQ2kNoA1Pf3+cxXqB4X/k5ShxZ6OAGlmk0h+59iHPyMOJJEvxF+
+jNQPiwHQwoRShw==
+=AUpW
+-----END PGP SIGNATURE-----
