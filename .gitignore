@@ -1,8 +1,10 @@
 mesonbuild/
 .tx/
 *.bak/
+*.orig/
 *~/
 *.bak
+*.orig
 *~
 debian/.debhelper/
 debian/debhelper-build-stamp
